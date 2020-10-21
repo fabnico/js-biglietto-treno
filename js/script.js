@@ -1,6 +1,7 @@
 var PREZZO_BASE = 0.21;
 
 var generate = document.getElementById('generate');
+var reset = document.getElementById('cancel');
 
 generate.addEventListener('click', function(){
    var name = document.getElementById('nameSurname');
@@ -24,4 +25,10 @@ generate.addEventListener('click', function(){
    document.getElementById('cp').innerHTML = Math.floor(Math.random() * (100000 - 90000) +90000);
 
    document.getElementById('show').style.display = 'block';
+})
+
+reset.addEventListener('click', function(){
+   document.getElementById('nameSurname').value = "";
+   document.getElementById('numKm').value = "";
+   document.getElementById('show').style.display = "none";
 })
