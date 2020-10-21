@@ -2,10 +2,76 @@
 <html lang="en" dir="ltr">
    <head>
       <meta charset="utf-8">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/style.css">
       <title>Acquista il tuo biglietto</title>
    </head>
    <body>
-      <p id="buy"></p>
-      <script src="script.js"></script>
+      <main>
+         <h1 class="text-center">
+            CALCOLA IL PREZZO DEL TUO BIGLIETTO
+         </h1>
+         <div class="container datas">
+            <div class="row">
+               <div class="col-xs-4 text-center">
+                  <label for="nameSurname">Nome Cognome</label>
+                  <input type="text" id="nameSurname" value="">
+               </div>
+               <div class="col-xs-4 text-center">
+                  <label for="numKm">Km da percorrere</label>
+                  <input type="text" id="numKm" value="">
+               </div>
+               <div class="col-xs-4 text-center">
+                  <label for="age">Fascia d'età</label>
+                  <select  id="age">
+                       <option value="standard">18-65</option>
+                       <option value="minorenne">Minorenne</option>
+                       <option value="over65">Over 65</option>
+                  </select>
+               </div>
+               <div class="col-xs-12 actions text-center">
+                  <button type="button" name="genera">Genera</button>
+                  <button type="button" name="annulla">Annulla</button>
+               </div>
+            </div>
+         </div>
+         <section id="show">
+            <h1 class="text-center">
+               IL TUO BIGLIETTO
+            </h1>
+            <div class="container datas">
+               <div class="row">
+                  <div class="col-xs-12">
+                     <strong>DETTAGLIO PASSEGGERI</strong>
+                  </div>
+                  <div class="col-xs-3 border passenger">
+                     <div><strong>NOME PASSEGGERO</strong></div>
+                     <div id="name">lorem</div>
+                  </div>
+                  <div class="col-xs-9 border">
+                     <div class="row">
+                        <div class="col-xs-3">
+                           <div><strong>Offerta</strong></div>
+                           <div id="offer">lorem</div>
+                        </div>
+                        <div class="col-xs-3">
+                           <div><strong>Carrozza</strong></div>
+                           <div id="seat">lorem</div>
+                        </div>
+                        <div class="col-xs-3">
+                           <div><strong>Codice CP</strong></div>
+                           <div id="cp">lorem</div>
+                        </div>
+                        <div class="col-xs-3">
+                           <div><strong>Costo biglietto</strong></div>
+                           <div id="price">lorem</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <!-- <script src="js/script.js"></script> -->
    </body>
 </html>

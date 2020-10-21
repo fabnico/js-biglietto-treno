@@ -1,0 +1,60 @@
+body{
+   background-color: #B91450;
+   color: black;
+}
+
+.datas{
+   background-color: white;
+   padding: 20px;
+}
+
+main .datas:first-of-type{
+   border-radius: 10px;
+}
+
+main  h1{
+   color: white;
+   margin: 20px 0;
+}
+
+.datas label{
+   display: block;
+   color: #B91450;
+}
+
+.datas input, .datas select{
+   border: 1px solid #B91450;
+   border-radius: 5px;
+   margin-top: 10px;
+}
+
+.actions{
+   margin-top: 40px;
+}
+
+.actions button:first-child{
+   margin-right: 20px;
+}
+
+.actions button{
+   color: #B91450;
+   font-weight: bold;
+   font-size: 18px;
+}
+
+.grey{
+   background-color: #808080;
+}
+
+.border{
+   border-top: 1px solid #808080;
+   border-bottom: 1px solid #808080;
+}
+
+.passenger{
+   background-color: #808080;
+}
+
+#show{
+   display: none;
+}
